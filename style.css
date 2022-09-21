@@ -1,0 +1,26 @@
+#button {
+  background-color: pink;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 7px;
+  margin-top: 10%;
+
+}
+
+#button:hover {
+  background-color: brown;
+  color: antiquewhite;
+}
+
+#button:active {
+  background-color: blue;
+  color: azure;
+}
+
+#todo-titile {
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 7px;
+  margin-top: 10%;
+
+}

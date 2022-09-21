@@ -1,0 +1,58 @@
+<html>
+
+<head>
+  <title>My Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <input id="todo-titile" type="text">
+  <button id="button" onclick="addTodo()">Add Todo</button>
+
+
+
+  <script>
+
+
+
+    let todos = ['Get groceries', 'Wash car', 'Make dinner']
+    render();
+    //todos.push('another todo');
+    // todos.pop();
+    //console.log('HELLO'.toLowerCase());
+
+
+    function addTodo() {
+      let textbox = document.getElementById("todo-title");
+      let title = textbox.value;
+      todos.push(title);
+
+      render();
+    }
+
+    function render() {
+      todos.forEach(function (todoTitle) {
+        let element = document.createElement('div');
+        element.innerText = todoTitle;
+        document.body.appendChild(element);
+      });
+    }
+    // let element = document.createElement('div');//created a div
+    // element.innerHTML = todo1;//(inner text is get groceries)
+    // document.body.appendChild(element);
+
+    /*function addTodo(todoTitle) {
+      let element = document.createElement('div');
+      element.innerHTML = todoTitle;
+      document.body.appendChild(element);
+    }
+
+    addTodo(todo1);
+    addTodo(todo2);
+    addTodo(todo3); */
+
+
+  </script>
+</body>
+
+</html>
